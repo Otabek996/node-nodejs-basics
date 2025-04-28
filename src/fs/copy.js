@@ -9,7 +9,7 @@ const sourceDir = "src/fs/files";
 const destinationDir = "src/fs/files_copy";
 const errorMessage = "FS operation failed";
 
-async function copy(src, dest) {
+const copy = async (src, dest) => {
   try {
     await access(src, constants.F_OK);
   } catch {
