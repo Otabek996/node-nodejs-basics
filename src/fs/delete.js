@@ -11,7 +11,7 @@ const deleteFileName = "fileToRemove.txt";
 const errorMessage = "FS operation failed";
 
 const remove = async (src, fileName) => {
-  const filePath = join(sourceDir, deleteFileName);
+  const filePath = join(src, fileName);
 
   try {
     await access(filePath, constants.F_OK);
